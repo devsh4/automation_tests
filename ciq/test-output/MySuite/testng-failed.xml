@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite thread-count="2" guice-stage="DEVELOPMENT" name="Failed suite [MySuite]" parallel="classes">
+  <test name="BVT(failed)" parallel="classes">
+    <classes>
+      <class name="pa_bvt.ManagementPages">
+        <methods>
+          <include name="replaceHoldingsMaster"/>
+          <include name="unlinkHoldingsMaster"/>
+          <include name="Login"/>
+          <include name="tearDown"/>
+          <include name="linkHoldingsMaster"/>
+          <include name="breakdown"/>
+        </methods>
+      </class> <!-- pa_bvt.ManagementPages -->
+      <class name="pa_bvt.OtherPages">
+        <methods>
+          <include name="login"/>
+          <include name="tearDown"/>
+          <include name="breakdown"/>
+        </methods>
+      </class> <!-- pa_bvt.OtherPages -->
+      <class name="pa_bvt.Create_Comp">
+        <methods>
+          <include name="Signin"/>
+          <include name="AfterClass"/>
+          <include name="teardown"/>
+        </methods>
+      </class> <!-- pa_bvt.Create_Comp -->
+      <class name="pa_bvt.Reporting">
+        <methods>
+          <include name="login"/>
+          <include name="teardown"/>
+          <include name="tearDown"/>
+        </methods>
+      </class> <!-- pa_bvt.Reporting -->
+      <class name="pa_bvt.OtherLeftLinks">
+        <methods>
+          <include name="tearDown"/>
+          <include name="AfterClass"/>
+          <include name="signIn"/>
+        </methods>
+      </class> <!-- pa_bvt.OtherLeftLinks -->
+      <class name="pa_bvt.Create_Pf">
+        <methods>
+          <include name="Signin"/>
+          <include name="tearDown"/>
+          <include name="AfterClass"/>
+        </methods>
+      </class> <!-- pa_bvt.Create_Pf -->
+      <class name="pa_bvt.LeftLink">
+        <methods>
+          <include name="tearDown"/>
+          <include name="AfterClass"/>
+          <include name="signIn"/>
+        </methods>
+      </class> <!-- pa_bvt.LeftLink -->
+    </classes>
+  </test> <!-- BVT(failed) -->
+</suite> <!-- Failed suite [MySuite] -->

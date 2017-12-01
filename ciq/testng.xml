@@ -1,0 +1,28 @@
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd" >
+  
+<suite name="MySuite" verbose="1" parallel="classes" thread-count="2">
+
+  <test name="BVT" >
+    <classes>
+       <class name="pa_bvt.Create_Pf" />
+       <class name="pa_bvt.Create_Comp"/>	
+       <class name="pa_bvt.LeftLink"/>
+       <class name="pa_bvt.ManagementPages"/>
+       <class name="pa_bvt.OtherLeftLinks"/>
+       <class name="pa_bvt.OtherPages"/>
+       <class name="pa_bvt.Reporting"/>
+       
+    </classes>
+  </test>
+  
+  <!--   
+  <test name="BVT" >
+    <classes>
+       <class name="datadriven.RiskFinal" />
+       <class name="datadriven.IndexAggregatesSmokeTest"/>
+    </classes>
+  </test> 
+  
+   -->
+  
+</suite>

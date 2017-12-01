@@ -1,0 +1,10 @@
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd" >
+  
+<suite name="MySuite" verbose="1" parallel="instances" thread-count="3">
+  <test name="datadriven" >
+    <classes>
+       <class name="datadriven.IndexAggregatesSmokeTest" />
+    </classes>
+  </test>
+  
+</suite>

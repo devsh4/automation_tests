@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<suite name="Pay1" parallel="false" verbose = "1">
+	 
+ 	<test name="One">
+		<classes>
+		    <class name="master_distributor.Transfer"/>
+		</classes>
+	</test> 
+		
+	 <test name="Two">
+	    <classes>
+			<class name="master_distributor.Activities"/>
+		</classes>
+	</test>	
+	
+	<!-- <test name="Four">
+    	<classes>
+			<class name="master_distributor.MyProfile"/>
+		</classes>
+	</test> -->
+	
+	<test name="Five">
+    	<classes>
+			<class name="pay1_distributor.Reports"/>
+		</classes>
+	</test>
+	
+		    	    	    	    	    
+	<listeners>
+           	<listener class-name="lib.RetryListener"/>
+	</listeners>
+
+		
+</suite>

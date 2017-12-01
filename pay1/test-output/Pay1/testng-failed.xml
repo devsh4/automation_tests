@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Failed suite [Pay1]">
+  <listeners>
+    <listener class-name="lib.RetryListener"/>
+  </listeners>
+  <test name="One(failed)">
+    <classes>
+      <class name="master_distributor.Activities">
+        <methods>
+          <include name="resultCheck"/>
+          <include name="setUp"/>
+        </methods>
+      </class> <!-- master_distributor.Activities -->
+      <class name="pay1_distributor.Reports">
+        <methods>
+          <include name="setUp"/>
+          <include name="resultCheck"/>
+        </methods>
+      </class> <!-- pay1_distributor.Reports -->
+      <class name="master_distributor.Transfer">
+        <methods>
+          <include name="resultCheck"/>
+          <include name="accHistory"/>
+          <include name="transfer"/>
+          <include name="pullback"/>
+          <include name="mainReport"/>
+          <include name="checkDist_balance"/>
+          <include name="lastTransactions"/>
+          <include name="setUp"/>
+        </methods>
+      </class> <!-- master_distributor.Transfer -->
+    </classes>
+  </test> <!-- One(failed) -->
+  <test name="Two(failed)">
+    <classes>
+      <class name="master_distributor.Activities">
+        <methods>
+          <include name="createRm"/>
+          <include name="resultCheck"/>
+          <include name="setUp"/>
+        </methods>
+      </class> <!-- master_distributor.Activities -->
+      <class name="pay1_distributor.Reports">
+        <methods>
+          <include name="setUp"/>
+          <include name="resultCheck"/>
+        </methods>
+      </class> <!-- pay1_distributor.Reports -->
+      <class name="master_distributor.Transfer">
+        <methods>
+          <include name="resultCheck"/>
+          <include name="setUp"/>
+        </methods>
+      </class> <!-- master_distributor.Transfer -->
+    </classes>
+  </test> <!-- Two(failed) -->
+  <test name="Five(failed)">
+    <classes>
+      <class name="master_distributor.Activities">
+        <methods>
+          <include name="resultCheck"/>
+          <include name="setUp"/>
+        </methods>
+      </class> <!-- master_distributor.Activities -->
+      <class name="pay1_distributor.Reports">
+        <methods>
+          <include name="setUp"/>
+          <include name="resultCheck"/>
+          <include name="retailerSale"/>
+        </methods>
+      </class> <!-- pay1_distributor.Reports -->
+      <class name="master_distributor.Transfer">
+        <methods>
+          <include name="resultCheck"/>
+          <include name="setUp"/>
+        </methods>
+      </class> <!-- master_distributor.Transfer -->
+    </classes>
+  </test> <!-- Five(failed) -->
+</suite> <!-- Failed suite [Pay1] -->
