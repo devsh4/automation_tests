@@ -1,2 +1,1 @@
-# web_tests
-Code for automation of functional tests and data driven tests of websites (Company Y) in Selenium.
+Automation tests of websites for Company_Y in Selenium.
