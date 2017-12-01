@@ -1,1 +1,1 @@
-Automation tests of websites for Company_Y in Selenium.
+Automation test suite devloped for Company_Y.
