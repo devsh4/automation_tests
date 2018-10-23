@@ -75,7 +75,7 @@ import lib.Utility;
 	driver.findElement(By.id(password)).sendKeys(data.getData("Variables", 5, 1));
 	//Thread.sleep(3000);
 	driver.findElement(By.id(signIn)).click();
-	driver.get("https://www.capitaliq.com/CIQDotNet/Portfolio/PortfolioList.aspx");
+	driver.get("https://********/CIQDotNet/Portfolio/PortfolioList.aspx");
 	}
 	
 	
