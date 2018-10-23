@@ -33,7 +33,7 @@ public class Config {
 
 	//Excel Path
 	public static String excelPath = "./Dependencies/Test_Data.xlsx";
-	public static String excelpath_demo = "C:\\Users\\Administrator.pay1lap-71-PC\\Desktop\\Book1.xlsx";
+	public static String excelpath_demo = "C:\\****\\Book1.xlsx";
 	
 	//Website Title used for ASSERTION
 	public static String title = "XXX - Distributor Portal | Cash to Digital Network";
@@ -143,7 +143,7 @@ public class Config {
 	public void assertFunc(WebDriver driver){
 		try{
 		
-		if(baseUrl.equals("http://shop.pay1.in/")){
+		if(baseUrl.equals("http://******")){
 			
 			Assert.assertEquals(driver.getTitle(), retailer_title);
 			Assert.assertTrue(!driver.getCurrentUrl().contains("error"));
